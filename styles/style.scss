@@ -1,0 +1,53 @@
+$alt-primary: #272a31;
+$alt-secondary: #ec5242;
+$alt-light: #d3d3d3;
+$bg-color: #F7F7F7;
+
+//padding
+
+$section-padding: 23px;
+
+body {
+  padding: 0;
+  img {
+    height: 105vh;
+    // background-repeat: no-repeat;
+    position: absolute;
+    background-size: auto;
+    z-index: -1;
+    opacity: 0.2;
+  }
+}
+
+nav {
+  padding: $section-padding;
+  background-color: $bg-color;
+  .nav-bars {
+    color: $alt-primary;
+  }
+}
+
+.hero {
+  padding: $section-padding;
+  background-color: $bg-color;
+  .hello {
+    margin-bottom: 0;
+  }
+  .home-para {
+    background-color: $alt-light;
+    border: 3px solid white;
+    padding: 5px;
+  }
+}
+
+.services{
+    background-color: $alt-primary;
+    .bord{
+        background-color: $alt-secondary;
+        width: 40px;
+        height: 1px;
+        border-radius: 5px;
+        
+    }
+    height: 30vh;
+}
