@@ -18,13 +18,6 @@ body .home-bg {
   top: -100px;
 }
 
-nav {
-  padding: 23px;
-}
-nav .nav-bars {
-  color: #272a31;
-}
-
 .hero {
   padding: 23px;
 }
@@ -193,6 +186,9 @@ nav .nav-bars {
   nav .nav-items .nav-btns .special {
     border: 5px solid #ec5242;
   }
+  nav .nav-items .nav-btns .close {
+    display: none;
+  }
   .hero {
     max-width: 70%;
     padding-left: 16%;
@@ -252,7 +248,7 @@ nav .nav-bars {
     text-align: center;
   }
 }
-@media (max-width: 786px) {
+@media (max-width: 768px) {
   nav {
     padding: 23px;
   }
@@ -260,7 +256,6 @@ nav .nav-bars {
     color: #272a31;
   }
   nav .nav-btns {
-    display: flex !important;
     background-color: white;
     height: 100%;
     position: absolute;

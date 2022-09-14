@@ -6,6 +6,7 @@ generateCarCard()
 
 
 const mobNav = document.querySelector('.mob-nav-container')
+const desctopNav = document.querySelector('.nav-items')
 const navBars = document.querySelector('.nav-bars')
 const navBtns = document.querySelector('.nav-btns')
 const close = document.createElement('a')
@@ -21,4 +22,6 @@ navBars.addEventListener('click', () => {
 
 close.addEventListener('click', () => {
     mobNav.removeChild(navBtns)
+    desctopNav.appendChild(navBtns)
+
 })
