@@ -246,9 +246,49 @@ nav .nav-bars {
     grid-template-columns: auto auto;
     justify-items: center;
   }
-  .cars .section-title, .cars .bord {
+  .cars .section-title,
+.cars .bord {
     grid-column: 1/3;
     text-align: center;
+  }
+}
+@media (max-width: 786px) {
+  nav {
+    padding: 23px;
+  }
+  nav .nav-bars {
+    color: #272a31;
+  }
+  nav .nav-btns {
+    display: flex !important;
+    background-color: white;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.95;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    font-size: 39px;
+    gap: 30px;
+    padding: 20% 0 0 7%;
+    transition: 2s;
+  }
+  nav .nav-btns .close {
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    width: 52px;
+    height: 52px;
+    text-align: center;
+    border-radius: 120px;
+    color: #d3d3d3;
+    background-color: #ec5242;
+  }
+  nav .nav-btns .special {
+    padding: 0 !important;
   }
 }
 @-webkit-keyframes car {
