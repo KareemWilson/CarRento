@@ -1,33 +1,28 @@
-export const services = [
+const services = [
   {
-    logo: "",
-    serviceTitle: "Comfortable",
-    serviceDescription: "travel anywhare with comfortable car, less amount of money and friendly captain who specialized in driving",
+    logo: "../assets/icons/car-seat.png",
+    serviceTitle: "Comfort",
+    serviceDescription: "travel anywhere with high comfort, less amount of money and friendly driver",
   },
   {
-    logo: "",
+    logo: "../assets/icons/fast.png",
     serviceTitle: "Fast",
-    serviceDescription: "travel anywhare with comfortable car, less amount of money and friendly captain who specialized in driving",
+    serviceDescription: "travel anywhere with high comfort, less amount of money and friendly driver",
   },
   {
-    logo: "",
+    logo: "../assets/icons/time.png",
     serviceTitle: "Time Dedication",
-    serviceDescription: "travel anywhare with comfortable car, less amount of money and friendly captain who specialized in driving",
+    serviceDescription: "travel anywhere with high comfort, less amount of money and friendly driver",
   },
   {
-    logo: "",
+    logo: "../assets/icons/friendly.png",
     serviceTitle: "friendly",
-    serviceDescription: "travel anywhare with comfortable car, less amount of money and friendly captain who specialized in driving",
+    serviceDescription: "travel anywhere with high comfort, less amount of money and friendly driver",
   },
   {
-    logo: "",
-    serviceTitle: "Hello",
-    serviceDescription: "travel anywhare with comfortable car, less amount of money and friendly captain who specialized in driving",
-  },
-  {
-    logo: "",
+    logo: "../assets/icons/tech.png",
     serviceTitle: "technology",
-    serviceDescription: "travel anywhare with comfortable car, less amount of money and friendly captain who specialized in driving",
+    serviceDescription: "travel anywhere with high comfort, less amount of money and friendly driver",
   },
 ];
 

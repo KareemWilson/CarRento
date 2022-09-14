@@ -1,4 +1,4 @@
-import services from "../services.js";
+import services from "../data/services.js";
 
 const generateServiceCard = () => {
     const serviceSection = document.querySelector("#services");

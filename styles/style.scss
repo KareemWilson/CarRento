@@ -1,3 +1,4 @@
+//colors
 $alt-primary: #272a31;
 $alt-secondary: #ec5242;
 $alt-secondary--hover: #c73828;
@@ -6,24 +7,32 @@ $bg-color: #f7f7f7;
 $card-bg-color: #a6aaad;
 
 //padding
-
 $section-padding: 23px;
 
+//more-than-one-time-used
+.bord {
+    width: 40px;
+    color: $alt-secondary;
+    opacity: 1;
+    margin-top: 0;
+}
+
+//-----------------------------
 body {
   padding: 0;
   .home-bg {
-    height: 105vh;
-    // background-repeat: no-repeat;
     position: absolute;
-    background-size: auto;
+    background-size: cover;
     z-index: -1;
-    opacity: 0.2;
+    opacity: 0.13;
+    height: auto;
+    width: 100%;
+    top: -100px;
   }
 }
 
 nav {
   padding: $section-padding;
-  background-color: $bg-color;
   .nav-bars {
     color: $alt-primary;
   }
@@ -31,13 +40,24 @@ nav {
 
 .hero {
   padding: $section-padding;
-  background-color: $bg-color;
   .hello {
     margin-bottom: 0;
     color: $alt-secondary;
   }
-  .title{
+  .title {
     color: $alt-secondary;
+    font-weight: bolder;
+    font-size: 37px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(40, 41, 43, 0.3),
+        rgba(44, 46, 49, 0.1)
+      ),
+      url(../assets/elements/text-bg.jpg);
+    background-size: contain;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
   }
   .home-para {
     background-color: $bg-color;
@@ -58,15 +78,7 @@ nav {
   gap: 8px;
   background-size: 10px;
   min-height: 80vh;
-  .section-title {
-    margin-top: 60px;
-  }
-  .bord {
-    width: 40px;
-    color: $alt-secondary;
-    opacity: 1;
-    margin-top: 0;
-  }
+  
   .service-card {
     background-image: linear-gradient(
       to right,
@@ -104,8 +116,12 @@ nav {
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 28px;
-    &:hover{
-        background-color: $alt-secondary--hover;
+    &:hover {
+      background-color: $alt-secondary--hover;
     }
   }
 }
+
+
+//-------------cars section
+

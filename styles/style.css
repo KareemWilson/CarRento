@@ -1,17 +1,25 @@
+.bord {
+  width: 40px;
+  color: #ec5242;
+  opacity: 1;
+  margin-top: 0;
+}
+
 body {
   padding: 0;
 }
 body .home-bg {
-  height: 105vh;
   position: absolute;
-  background-size: auto;
+  background-size: cover;
   z-index: -1;
-  opacity: 0.2;
+  opacity: 0.13;
+  height: auto;
+  width: 100%;
+  top: -100px;
 }
 
 nav {
   padding: 23px;
-  background-color: #f7f7f7;
 }
 nav .nav-bars {
   color: #272a31;
@@ -19,7 +27,6 @@ nav .nav-bars {
 
 .hero {
   padding: 23px;
-  background-color: #f7f7f7;
 }
 .hero .hello {
   margin-bottom: 0;
@@ -27,6 +34,13 @@ nav .nav-bars {
 }
 .hero .title {
   color: #ec5242;
+  font-weight: bolder;
+  font-size: 37px;
+  background-image: linear-gradient(to bottom, rgba(40, 41, 43, 0.3), rgba(44, 46, 49, 0.1)), url(../assets/elements/text-bg.jpg);
+  background-size: contain;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
 }
 .hero .home-para {
   background-color: #f7f7f7;
@@ -41,15 +55,6 @@ nav .nav-bars {
   gap: 8px;
   background-size: 10px;
   min-height: 80vh;
-}
-.services .section-title {
-  margin-top: 60px;
-}
-.services .bord {
-  width: 40px;
-  color: #ec5242;
-  opacity: 1;
-  margin-top: 0;
 }
 .services .service-card {
   background-image: linear-gradient(to right, rgba(102, 104, 109, 0.3), rgba(100, 112, 130, 0.3));
