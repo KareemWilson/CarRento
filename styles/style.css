@@ -134,6 +134,21 @@ body .home-bg {
   margin-bottom: 0;
 }
 
+.partners {
+  background-color: #272a31;
+  gap: 8px;
+  background-size: 10px;
+  min-height: 250px;
+  padding-bottom: 48px;
+}
+.partners .section-title {
+  padding-top: 48px;
+  color: #d3d3d3;
+}
+.partners .partners-logo {
+  max-width: 70%;
+}
+
 @media (min-width: 768px) {
   nav {
     padding: 0px;
@@ -246,6 +261,10 @@ body .home-bg {
 .cars .bord {
     grid-column: 1/3;
     text-align: center;
+  }
+  .partners-logo {
+    flex-direction: row !important;
+    gap: 120px;
   }
 }
 @media (max-width: 768px) {
