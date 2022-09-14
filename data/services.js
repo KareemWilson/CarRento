@@ -16,12 +16,12 @@ const services = [
   },
   {
     logo: "../assets/icons/friendly.png",
-    serviceTitle: "friendly",
+    serviceTitle: "Friendly",
     serviceDescription: "travel anywhere with high comfort, less amount of money and friendly driver",
   },
   {
     logo: "../assets/icons/tech.png",
-    serviceTitle: "technology",
+    serviceTitle: "Technology",
     serviceDescription: "travel anywhere with high comfort, less amount of money and friendly driver",
   },
 ];
