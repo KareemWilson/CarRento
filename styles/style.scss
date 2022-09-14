@@ -4,17 +4,17 @@ $alt-secondary: #ec5242;
 $alt-secondary--hover: #c73828;
 $alt-light: #d3d3d3;
 $bg-color: #f7f7f7;
-$card-bg-color: #a6aaad;
+$grey-color: #a6aaad;
 
 //padding
 $section-padding: 23px;
 
 //more-than-one-time-used
 .bord {
-    width: 40px;
-    color: $alt-secondary;
-    opacity: 1;
-    margin-top: 0;
+  width: 40px;
+  color: $alt-secondary;
+  opacity: 1;
+  margin-top: 0;
 }
 
 //-----------------------------
@@ -55,6 +55,7 @@ nav {
       ),
       url(../assets/elements/text-bg.jpg);
     background-size: contain;
+    background-clip: content-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
@@ -78,7 +79,7 @@ nav {
   gap: 8px;
   background-size: 10px;
   min-height: 80vh;
-  
+
   .service-card {
     background-image: linear-gradient(
       to right,
@@ -122,6 +123,180 @@ nav {
   }
 }
 
-
 //-------------cars section
+.cars {
+  gap: 22px;
+}
+.car-card {
+  gap: 42px;
+  width: 95%;
+  .car-img-container {
+    height: 155px;
+    .behind-img {
+      position: relative;
+      right: 13px;
+      height: 89px;
+      width: 89px;
+    }
+    .car-img {
+      position: relative;
+      background-size: cover;
+      min-height: 108px;
+      width: 108px;
+      left: 19px;
+      top: -62px;
+      object-fit: cover;
+    }
+  }
+  .car-info {
+    gap: 6px;
+    .car-name {
+      font-weight: 800;
+    }
+    .car-feature {
+      color: $alt-secondary;
+      font-style: italic;
+    }
+    .car-desc {
+      line-height: 18px;
+      font-size: 13px;
+    }
+  }
+  .bord {
+    color: $grey-color;
+    margin-bottom: 0;
+  }
+}
 
+@media (min-width: 768px) {
+  nav {
+    padding: 0px;
+    
+    .nav-bars {
+      display: none;
+    }
+    #toolbar-items {
+      display: flex !important;
+      background-color: $alt-primary;
+      color: $alt-light;
+      margin-bottom: 0 !important;
+      padding-right: 16% !important;
+      .fa {
+        line-height: 0;
+      }
+    }
+    .nav-items {
+      background-color: white;
+      display: flex !important;
+      height: 70px;
+      padding: 0px 16% 0 22% !important;
+      .logo {
+        gap: 6px;
+        .logo-img{
+            position: absolute;
+            animation: car 4s ;
+            animation-delay: 1s;
+            left: 316px;
+            
+        }
+        .vertical-bord {
+          width: 3px;
+          height: 50px;
+          opacity: 1;
+          background-color: $alt-primary;
+        }
+        .carento {
+          color: $alt-secondary;
+        }
+      }
+      .nav-btns{
+        gap: 80px;
+        .nav-item a{
+            &:hover{
+                color: $alt-secondary !important;
+            }
+        }
+        .special{
+            border: 5px solid $alt-secondary
+        }
+      }
+    }
+  }
+
+  .hero {
+    max-width: 70%;
+    padding-left: 16%;
+    padding-top: 6%;
+    .hello {
+      font-size: 55px;
+    }
+    .title {
+      font-size: 93px;
+    }
+    .home-para {
+      max-width: 69%;
+      font-size: 16px;
+      padding: 20px;
+    }
+  }
+
+  .services {
+    display: grid !important;
+    grid-template-columns: auto auto auto auto auto auto;
+    align-content: center;
+    align-items: start !important;
+    min-height: 60vh;
+    justify-items: center;
+    justify-content: center;
+    column-gap: 0px;
+    .section-title,
+    .bord,
+    .btn {
+      grid-column: 1/7;
+    }
+  }
+
+  .service-card {
+    flex-direction: column !important;
+    height: 278px !important;
+    max-width: 268px;
+    padding-top: 30px !important;
+    .service-title {
+      min-width: auto !important;
+      font-size: 25px !important;
+      padding-top: 18px;
+    }
+    .service-desc {
+      text-align: center;
+      font-size: 16px !important;
+      padding-top: 10px;
+    }
+  }
+}
+
+
+@keyframes car {
+    0% {
+        transform: rotate(0deg);
+        left: -50px;
+    }
+    97% {
+        transform: rotate(20deg);
+        left: 316px;
+        animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+    }
+    98% {
+        transform: rotate(15deg);
+        left: 316px;
+        animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+    }
+    99% {
+        transform: rotate(5deg);
+        left: 316px;
+        animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+    }
+    100% {
+        transform: rotate(0deg);
+        left: 316px;
+    }
+}

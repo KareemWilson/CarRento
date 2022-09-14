@@ -1,24 +1,34 @@
 const cars =  [
     {
-        name: 'car 1',
+        name: 'BMW X1 sport line',
         shortInfo: 'electric one, you will enjoy with it',
-        description: 'this is the most comfortable car in our garage, you can try it before rent'
+        description: 'this is the most comfortable car in our garage, you can try it before rent',
+        carImg: '../assets/cars/car1.jpg',
+        behindCarImg: '../assets/elements/behind.png'
     },{
-        name: 'car 2',
+        name: 'Volkswagen',
         shortInfo: 'electric one, you will enjoy with it',
-        description: 'this is the most comfortable car in our garage, you can try it before rent'
+        description: 'this is the most comfortable car in our garage, you can try it before rent',
+        carImg: '../assets/cars/car2.jpg',
+        behindCarImg: '../assets/elements/behind.png'
     },{
-        name: 'car 3',
+        name: 'Audi',
         shortInfo: 'electric one, you will enjoy with it',
-        description: 'this is the most comfortable car in our garage, you can try it before rent'
+        description: 'this is the most comfortable car in our garage, you can try it before rent',
+        carImg: '../assets/cars/car3.jpg',
+        behindCarImg: '../assets/elements/behind.png'
     },{
-        name: 'car 4',
+        name: 'Audi R8',
         shortInfo: 'electric one, you will enjoy with it',
-        description: 'this is the most comfortable car in our garage, you can try it before rent'
+        description: 'this is the most comfortable car in our garage, you can try it before rent',
+        carImg: '../assets/cars/car4.jpg',
+        behindCarImg: '../assets/elements/behind.png'
     },{
-        name: 'car 5',
+        name: 'Bentley',
         shortInfo: 'electric one, you will enjoy with it',
-        description: 'this is the most comfortable car in our garage, you can try it before rent'
+        description: 'this is the most comfortable car in our garage, you can try it before rent',
+        carImg: '../assets/cars/car5.jpg',
+        behindCarImg: '../assets/elements/behind.png'
     },
 ]
 

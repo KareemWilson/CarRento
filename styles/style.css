@@ -38,6 +38,7 @@ nav .nav-bars {
   font-size: 37px;
   background-image: linear-gradient(to bottom, rgba(40, 41, 43, 0.3), rgba(44, 46, 49, 0.1)), url(../assets/elements/text-bg.jpg);
   background-size: contain;
+  background-clip: content-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
@@ -92,4 +93,208 @@ nav .nav-bars {
 }
 .services .btn:hover {
   background-color: #c73828;
+}
+
+.cars {
+  gap: 22px;
+}
+
+.car-card {
+  gap: 42px;
+  width: 95%;
+}
+.car-card .car-img-container {
+  height: 155px;
+}
+.car-card .car-img-container .behind-img {
+  position: relative;
+  right: 13px;
+  height: 89px;
+  width: 89px;
+}
+.car-card .car-img-container .car-img {
+  position: relative;
+  background-size: cover;
+  min-height: 108px;
+  width: 108px;
+  left: 19px;
+  top: -62px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.car-card .car-info {
+  gap: 6px;
+}
+.car-card .car-info .car-name {
+  font-weight: 800;
+}
+.car-card .car-info .car-feature {
+  color: #ec5242;
+  font-style: italic;
+}
+.car-card .car-info .car-desc {
+  line-height: 18px;
+  font-size: 13px;
+}
+.car-card .bord {
+  color: #a6aaad;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  nav {
+    padding: 0px;
+  }
+  nav .nav-bars {
+    display: none;
+  }
+  nav #toolbar-items {
+    display: flex !important;
+    background-color: #272a31;
+    color: #d3d3d3;
+    margin-bottom: 0 !important;
+    padding-right: 16% !important;
+  }
+  nav #toolbar-items .fa {
+    line-height: 0;
+  }
+  nav .nav-items {
+    background-color: white;
+    display: flex !important;
+    height: 70px;
+    padding: 0px 16% 0 22% !important;
+  }
+  nav .nav-items .logo {
+    gap: 6px;
+  }
+  nav .nav-items .logo .logo-img {
+    position: absolute;
+    -webkit-animation: car 4s;
+            animation: car 4s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    left: 316px;
+  }
+  nav .nav-items .logo .vertical-bord {
+    width: 3px;
+    height: 50px;
+    opacity: 1;
+    background-color: #272a31;
+  }
+  nav .nav-items .logo .carento {
+    color: #ec5242;
+  }
+  nav .nav-items .nav-btns {
+    gap: 80px;
+  }
+  nav .nav-items .nav-btns .nav-item a:hover {
+    color: #ec5242 !important;
+  }
+  nav .nav-items .nav-btns .special {
+    border: 5px solid #ec5242;
+  }
+  .hero {
+    max-width: 70%;
+    padding-left: 16%;
+    padding-top: 6%;
+  }
+  .hero .hello {
+    font-size: 55px;
+  }
+  .hero .title {
+    font-size: 93px;
+  }
+  .hero .home-para {
+    max-width: 69%;
+    font-size: 16px;
+    padding: 20px;
+  }
+  .services {
+    display: grid !important;
+    grid-template-columns: auto auto auto auto auto auto;
+    align-content: center;
+    align-items: start !important;
+    min-height: 60vh;
+    justify-items: center;
+    justify-content: center;
+    -moz-column-gap: 0px;
+         column-gap: 0px;
+  }
+  .services .section-title,
+.services .bord,
+.services .btn {
+    grid-column: 1/7;
+  }
+  .service-card {
+    flex-direction: column !important;
+    height: 278px !important;
+    max-width: 268px;
+    padding-top: 30px !important;
+  }
+  .service-card .service-title {
+    min-width: auto !important;
+    font-size: 25px !important;
+    padding-top: 18px;
+  }
+  .service-card .service-desc {
+    text-align: center;
+    font-size: 16px !important;
+    padding-top: 10px;
+  }
+}
+@-webkit-keyframes car {
+  0% {
+    transform: rotate(0deg);
+    left: -50px;
+  }
+  97% {
+    transform: rotate(20deg);
+    left: 316px;
+    -webkit-animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+            animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+  }
+  98% {
+    transform: rotate(15deg);
+    left: 316px;
+    -webkit-animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+            animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+  }
+  99% {
+    transform: rotate(5deg);
+    left: 316px;
+    -webkit-animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+            animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+  }
+  100% {
+    transform: rotate(0deg);
+    left: 316px;
+  }
+}
+@keyframes car {
+  0% {
+    transform: rotate(0deg);
+    left: -50px;
+  }
+  97% {
+    transform: rotate(20deg);
+    left: 316px;
+    -webkit-animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+            animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+  }
+  98% {
+    transform: rotate(15deg);
+    left: 316px;
+    -webkit-animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+            animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+  }
+  99% {
+    transform: rotate(5deg);
+    left: 316px;
+    -webkit-animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+            animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+  }
+  100% {
+    transform: rotate(0deg);
+    left: 316px;
+  }
 }/*# sourceMappingURL=style.css.map */
