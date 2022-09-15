@@ -316,6 +316,7 @@ body .home-bg {
 footer {
   background-color: #f7f7f7;
   height: 130px;
+  justify-content: space-around;
 }
 footer .carento {
   margin: 0 !important;
@@ -324,6 +325,12 @@ footer .credit {
   margin: 0 !important;
 }
 
+@media (min-width: 768px) {
+  footer {
+    justify-content: center !important;
+    gap: 95px;
+  }
+}
 @-webkit-keyframes car {
   0% {
     transform: rotate(0deg);
@@ -353,7 +360,6 @@ footer .credit {
     position: block;
   }
 }
-
 @keyframes car {
   0% {
     transform: rotate(0deg);
