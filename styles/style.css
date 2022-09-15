@@ -313,6 +313,17 @@ body .home-bg {
     gap: 120px;
   }
 }
+footer {
+  background-color: #f7f7f7;
+  height: 130px;
+}
+footer .carento {
+  margin: 0 !important;
+}
+footer .credit {
+  margin: 0 !important;
+}
+
 @-webkit-keyframes car {
   0% {
     transform: rotate(0deg);
@@ -342,6 +353,7 @@ body .home-bg {
     position: block;
   }
 }
+
 @keyframes car {
   0% {
     transform: rotate(0deg);
