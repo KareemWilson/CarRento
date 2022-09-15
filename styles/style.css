@@ -86,8 +86,8 @@ body .home-bg {
     position: absolute;
     -webkit-animation: car 3s;
             animation: car 3s;
-    -webkit-animation-delay: 2s;
-            animation-delay: 2s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
     left: 316px;
   }
   nav .nav-items .logo .vertical-bord {
