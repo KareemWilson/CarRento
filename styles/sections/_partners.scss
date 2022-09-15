@@ -1,0 +1,23 @@
+@use '../abstract/variables' as *;
+
+.partners {
+    background-color: $alt-primary;
+    gap: 8px;
+    background-size: 10px;
+    min-height: 250px;
+    padding-bottom: 48px;
+    .section-title {
+      padding-top: 48px;
+      color: $alt-light;
+    }
+    .partners-logo {
+      max-width: 70%;
+    }
+  }
+
+@media (min-width: 786px) {
+    .partners-logo{
+        flex-direction: row !important;
+        gap: 120px;
+      }
+}

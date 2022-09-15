@@ -1,0 +1,14 @@
+@use '../abstract/variables' as *;
+
+body {
+    padding: 0;
+    .home-bg {
+      position: absolute;
+      background-size: cover;
+      z-index: -1;
+      opacity: 0.13;
+      height: auto;
+      width: 100%;
+      top: -100px;
+    }
+  }

@@ -1,0 +1,52 @@
+@use '../abstract/variables' as *;
+
+.hero {
+    padding: $section-padding;
+    .hello {
+      margin-bottom: 0;
+      color: $alt-secondary;
+    }
+    .title {
+      color: $alt-secondary;
+      font-weight: bolder;
+      font-size: 37px;
+      background-image: linear-gradient(
+          to bottom,
+          rgba(40, 41, 43, 0.3),
+          rgba(44, 46, 49, 0.1)
+        ),
+        url(../assets/elements/text-bg.jpg);
+      background-size: contain;
+      background-clip: content-box;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+    }
+    .home-para {
+      background-color: $bg-color;
+      border: 3px solid white;
+      padding: 5px;
+      font-size: 14px;
+    }
+  }
+
+
+  @media (min-width: 786px) {
+    .hero {
+        max-width: 70%;
+        padding-left: 16%;
+        padding-top: 6%;
+        .hello {
+          font-size: 55px;
+        }
+        .title {
+          font-size: 93px;
+        }
+        .home-para {
+          max-width: 69%;
+          font-size: 16px;
+          padding: 20px;
+        }
+      }
+  }
+  
