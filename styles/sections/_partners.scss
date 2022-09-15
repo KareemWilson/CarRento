@@ -12,12 +12,19 @@
     }
     .partners-logo {
       max-width: 70%;
+      gap: 30px;
+    }
+    .partner{
+      width: 75px;
     }
   }
 
 @media (min-width: 786px) {
     .partners-logo{
         flex-direction: row !important;
-        gap: 120px;
+        gap: 65px !important;
+        .partner{
+          width: 100px;
+        }
       }
 }
