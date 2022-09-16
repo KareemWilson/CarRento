@@ -241,6 +241,9 @@ body .home-bg {
 .cars {
   gap: 22px;
 }
+.cars .section-title {
+  margin: 0px;
+}
 
 .car-card {
   gap: 42px;
@@ -302,6 +305,7 @@ body .home-bg {
   background-size: 10px;
   min-height: 250px;
   padding-bottom: 48px;
+  opacity: 0.8;
 }
 .partners .section-title {
   padding-top: 48px;
