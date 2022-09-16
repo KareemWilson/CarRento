@@ -1,0 +1,35 @@
+@import '../abstract/variables';
+
+.partners {
+  background-color: $alt-primary;
+  gap: 8px;
+  background-size: 10px;
+  min-height: 250px;
+  padding-bottom: 48px;
+  opacity: 0.8;
+
+  .section-title {
+    padding-top: 48px;
+    color: $alt-light;
+  }
+
+  .partners-logo {
+    max-width: 70%;
+    gap: 30px;
+  }
+
+  .partner {
+    width: 75px;
+  }
+}
+
+@media (min-width: 786px) {
+  .partners-logo {
+    flex-direction: row !important;
+    gap: 65px !important;
+
+    .partner {
+      width: 100px;
+    }
+  }
+}

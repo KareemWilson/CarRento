@@ -1,0 +1,24 @@
+@import '../abstract/variables';
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+  font-family: Lato, sans-serif;
+  padding: 0;
+
+  .home-bg {
+    position: absolute;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.13;
+    height: 100%;
+    width: 100%;
+    top: -276px;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 768px) {
+  .home-bg {
+    top: -31px !important;
+  }
+}

@@ -1,0 +1,21 @@
+@import '../abstract/variables';
+
+footer {
+  background-color: $bg-color;
+  height: 130px;
+  justify-content: space-around;
+
+  .carento {
+    margin: 0 !important;
+  }
+
+  .credit {
+    margin: 0 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    gap: 95px;
+  }
+}

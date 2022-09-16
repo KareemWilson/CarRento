@@ -1,0 +1,28 @@
+@import '../abstract/variables' as;
+
+@keyframes car {
+  0% {
+    transform: rotate(0deg);
+    left: -150px;
+  }
+
+  97% {
+    transform: rotate(20deg);
+    left: 316px;
+  }
+
+  98% {
+    transform: rotate(15deg);
+    left: 316px;
+  }
+
+  99% {
+    transform: rotate(5deg);
+    left: 316px;
+  }
+
+  100% {
+    transform: rotate(0deg);
+    left: 316px;
+  }
+}
