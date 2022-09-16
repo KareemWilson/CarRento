@@ -12,7 +12,14 @@ body {
     opacity: 0.13;
     height: 100%;
     width: 100%;
-    top: -180px;
+    top: -276px;
     object-fit: cover;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .home-bg{
+    top:-31px !important;
   }
 }

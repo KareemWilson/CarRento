@@ -32,6 +32,22 @@
     padding: 5px;
     font-size: 14px;
   }
+  .date{
+    font-size: 24px;
+    font-weight: 900;
+    text-shadow: 1.8px 0;
+    letter-spacing: 1.7px;
+    color: $alt-primary;
+    opacity: 0.8;
+  }
+  .location{
+    font-size: 13px;
+    text-shadow: none;
+    font-weight: 100;
+    letter-spacing: normal;
+    color: $alt-primary;
+
+  }
 }
 
 @media (min-width: 786px) {
@@ -52,6 +68,12 @@
       max-width: 69%;
       font-size: 16px;
       padding: 20px;
+    }
+    .date{
+      font-size: 40px;
+    }
+    .location{
+      font-size: 20px;  
     }
   }
 }
