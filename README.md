@@ -9,7 +9,7 @@
 
 ## Live Demo
 
-[See the Demo version from here](https://livedemo.com)
+See the Demo version from [here](https://kareemwilson.github.io/CarRento/)
 
 ## Authors
 
