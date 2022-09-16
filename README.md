@@ -19,6 +19,14 @@
 - Instagram: [@](https://www.instagram.com/code.afternoon/)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/kareem-wilson/)
 
+
+## Credits
+
+This project is made possible by the community surrounding it and especially the wonderful people and projects listed in this document.
+ - Cindy Shin in Behance (Design and Main layout of project).
+ - unsplash.com (Pictures used in project)
+ - icon8.com (Icons and elements used in project)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
