@@ -1,4 +1,4 @@
-@use '../abstract/variables' as *;
+@import '../abstract/variables' as;
 
 @keyframes car {
   0% {
@@ -24,6 +24,5 @@
   100% {
     transform: rotate(0deg);
     left: 316px;
-    position: block;
   }
 }

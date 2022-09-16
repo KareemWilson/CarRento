@@ -1,4 +1,4 @@
-@use '../abstract/variables' as *;
+@import '../abstract/variables';
 
 @media (max-width: 768px) {
   nav {
