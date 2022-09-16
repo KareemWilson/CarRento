@@ -70,6 +70,9 @@
         .bord,
         .btn {
           grid-column: 1/7;
+          text-transform: uppercase;
+          text-decoration: underline;
+          background: none;
         }
       }
     

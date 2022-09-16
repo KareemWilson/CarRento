@@ -220,6 +220,9 @@ body .home-bg {
 .services .bord,
 .services .btn {
     grid-column: 1/7;
+    text-transform: uppercase;
+    text-decoration: underline;
+    background: none;
   }
   .service-card {
     flex-direction: column !important;
