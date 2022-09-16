@@ -8,9 +8,11 @@ body .home-bg {
   background-size: cover;
   z-index: -1;
   opacity: 0.13;
-  height: auto;
+  height: 100%;
   width: 100%;
-  top: -100px;
+  top: -180px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .bord {
