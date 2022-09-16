@@ -30,15 +30,17 @@
     }
   }
 
-  .about-logo{
+  .about-logo {
     background-color: white;
     padding: 10px 0 50px 0;
     text-align: center;
-    .description{
+
+    .description {
       max-width: 88%;
       text-align: center;
     }
-    .about-logo-details{
+
+    .about-logo-details {
       border: 2px solid rgb(236, 230, 230);
       height: 130px;
       width: 350px;
@@ -109,7 +111,6 @@
       background-repeat: no-repeat;
     }
   }
-
 }
 
 @media (min-width: 768px) {
@@ -127,10 +128,10 @@
       }
     }
   }
-  
-  .about-logo{
-    .description{
-      max-width: 30% !important; 
+
+  .about-logo {
+    .description {
+      max-width: 30% !important;
     }
   }
 
@@ -142,10 +143,11 @@
     }
   }
 
-  .about-partners{
+  .about-partners {
     display: none !important;
   }
-  .footer{
+
+  .footer {
     background-color: $alt-primary;
     color: $alt-light;
   }
