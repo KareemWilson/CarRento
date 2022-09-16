@@ -1,11 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
 @import '../abstract/variables' as;
-
 body {
   font-family: Lato, sans-serif;
   padding: 0;
 }
-
 body .home-bg {
   position: absolute;
   background-size: cover;
@@ -15,7 +13,7 @@ body .home-bg {
   width: 100%;
   top: -180px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .bord {
@@ -29,11 +27,9 @@ body .home-bg {
   nav {
     padding: 23px;
   }
-
   nav .nav-bars {
     color: #272a31;
   }
-
   nav .nav-btns {
     background-color: white;
     height: 100%;
@@ -50,7 +46,6 @@ body .home-bg {
     padding: 20% 0 0 7%;
     transition: 2s;
   }
-
   nav .nav-btns .close {
     position: absolute;
     right: 20px;
@@ -62,21 +57,17 @@ body .home-bg {
     color: #d3d3d3;
     background-color: #ec5242;
   }
-
   nav .nav-btns .special {
     padding: 0 !important;
   }
 }
-
 @media (min-width: 768px) {
   nav {
     padding: 0;
   }
-
   nav .nav-bars {
     display: none;
   }
-
   nav #toolbar-items {
     display: flex !important;
     background-color: #272a31;
@@ -84,68 +75,55 @@ body .home-bg {
     margin-bottom: 0 !important;
     padding-right: 16% !important;
   }
-
   nav #toolbar-items .fa {
     line-height: 0;
   }
-
   nav .nav-items {
     background-color: white;
     display: flex !important;
     height: 70px;
     padding: 0 16% 0 22% !important;
   }
-
   nav .nav-items .logo {
     gap: 6px;
   }
-
   nav .nav-items .logo .logo-img {
     position: absolute;
     -webkit-animation: car 3s;
-    animation: car 3s;
+            animation: car 3s;
     -webkit-animation-delay: 1s;
-    animation-delay: 1s;
+            animation-delay: 1s;
     left: 316px;
   }
-
   nav .nav-items .logo .vertical-bord {
     width: 1px;
     height: 50px;
     opacity: 0.6;
     background-color: #272a31;
   }
-
   nav .nav-items .logo .carento {
     color: #ec5242;
   }
-
   nav .nav-items .nav-btns {
     gap: 80px;
   }
-
   nav .nav-items .nav-btns .nav-item a:hover {
     color: #ec5242 !important;
   }
-
   nav .nav-items .nav-btns .special {
     border: 5px solid #ec5242;
   }
-
   nav .nav-items .nav-btns .close {
     display: none;
   }
 }
-
 .hero {
   padding: 23px;
 }
-
 .hero .hello {
   margin-bottom: 0;
   color: #ec5242;
 }
-
 .hero .title {
   color: #ec5242;
   font-weight: bolder;
@@ -157,7 +135,6 @@ body .home-bg {
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
 }
-
 .hero .home-para {
   background-color: #f7f7f7;
   border: 3px solid white;
@@ -171,22 +148,18 @@ body .home-bg {
     padding-left: 16%;
     padding-top: 6%;
   }
-
   .hero .hello {
     font-size: 55px;
   }
-
   .hero .title {
     font-size: 93px;
   }
-
   .hero .home-para {
     max-width: 69%;
     font-size: 16px;
     padding: 20px;
   }
 }
-
 .services {
   background-color: #272a31;
   background-image: linear-gradient(to bottom, rgba(40, 41, 43, 0.7), rgba(44, 46, 49, 0.7)), url("../assets/bgs/x.png");
@@ -194,7 +167,6 @@ body .home-bg {
   background-size: 10px;
   min-height: 80vh;
 }
-
 .services .service-card {
   background-image: linear-gradient(to right, rgba(102, 104, 109, 0.3), rgba(100, 112, 130, 0.3));
   width: 95%;
@@ -203,11 +175,9 @@ body .home-bg {
   align-items: center;
   height: 90px;
 }
-
 .services .service-card .service-img {
   width: 38px;
 }
-
 .services .service-card .service-title {
   min-width: 100px;
   font-size: 18px;
@@ -215,13 +185,11 @@ body .home-bg {
   margin-bottom: 0;
   color: #ec5242;
 }
-
 .services .service-card .service-desc {
   font-size: smaller;
   margin-bottom: 0;
   color: #d8dde0;
 }
-
 .services .btn {
   background-color: #ec5242;
   border-radius: 0;
@@ -233,7 +201,6 @@ body .home-bg {
   font-weight: 500;
   margin-bottom: 28px;
 }
-
 .services .btn:hover {
   background-color: #c73828;
 }
@@ -248,45 +215,38 @@ body .home-bg {
     justify-items: center;
     justify-content: center;
     -moz-column-gap: 0;
-    column-gap: 0;
+         column-gap: 0;
   }
-
   .services .section-title,
-  .services .bord,
-  .services .btn {
+.services .bord,
+.services .btn {
     grid-column: 1/7;
   }
-
   .services .btn {
     text-transform: uppercase;
     text-decoration: underline;
     background: none;
   }
-
   .service-card {
     flex-direction: column !important;
     height: 278px !important;
     max-width: 268px;
     padding-top: 30px !important;
   }
-
   .service-card .service-title {
     min-width: auto !important;
     font-size: 25px !important;
     padding-top: 18px;
   }
-
   .service-card .service-desc {
     text-align: center;
     font-size: 16px !important;
     padding-top: 10px;
   }
 }
-
 .cars {
   gap: 22px;
 }
-
 .cars .section-title {
   margin: 0;
 }
@@ -295,18 +255,15 @@ body .home-bg {
   gap: 42px;
   width: 95%;
 }
-
 .car-card .car-img-container {
   height: 155px;
 }
-
 .car-card .car-img-container .behind-img {
   position: relative;
   right: 13px;
   height: 89px;
   width: 89px;
 }
-
 .car-card .car-img-container .car-img {
   position: relative;
   background-size: cover;
@@ -315,27 +272,22 @@ body .home-bg {
   left: 19px;
   top: -62px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
-
 .car-card .car-info {
   gap: 6px;
 }
-
 .car-card .car-info .car-name {
   font-weight: 800;
 }
-
 .car-card .car-info .car-feature {
   color: #ec5242;
   font-style: italic;
 }
-
 .car-card .car-info .car-desc {
   line-height: 18px;
   font-size: 13px;
 }
-
 .car-card .bord {
   color: #a6aaad;
   margin-bottom: 0;
@@ -347,14 +299,12 @@ body .home-bg {
     grid-template-columns: auto auto;
     justify-items: center;
   }
-
   .cars .section-title,
-  .cars .bord {
+.cars .bord {
     grid-column: 1/3;
     text-align: center;
   }
 }
-
 .partners {
   background-color: #272a31;
   gap: 8px;
@@ -363,17 +313,14 @@ body .home-bg {
   padding-bottom: 48px;
   opacity: 0.8;
 }
-
 .partners .section-title {
   padding-top: 48px;
   color: #d3d3d3;
 }
-
 .partners .partners-logo {
   max-width: 70%;
   gap: 30px;
 }
-
 .partners .partner {
   width: 75px;
 }
@@ -383,22 +330,18 @@ body .home-bg {
     flex-direction: row !important;
     gap: 65px !important;
   }
-
   .partners-logo .partner {
     width: 100px;
   }
 }
-
 footer {
   background-color: #f7f7f7;
   height: 130px;
   justify-content: space-around;
 }
-
 footer .carento {
   margin: 0 !important;
 }
-
 footer .credit {
   margin: 0 !important;
 }
@@ -408,61 +351,50 @@ footer .credit {
     gap: 95px;
   }
 }
-
 @-webkit-keyframes car {
   0% {
     transform: rotate(0deg);
     left: -150px;
   }
-
   97% {
     transform: rotate(20deg);
     left: 316px;
   }
-
   98% {
     transform: rotate(15deg);
     left: 316px;
   }
-
   99% {
     transform: rotate(5deg);
     left: 316px;
   }
-
   100% {
     transform: rotate(0deg);
     left: 316px;
   }
 }
-
 @keyframes car {
   0% {
     transform: rotate(0deg);
     left: -150px;
   }
-
   97% {
     transform: rotate(20deg);
     left: 316px;
   }
-
   98% {
     transform: rotate(15deg);
     left: 316px;
   }
-
   99% {
     transform: rotate(5deg);
     left: 316px;
   }
-
   100% {
     transform: rotate(0deg);
     left: 316px;
   }
 }
-
 .seperator {
   margin: 0 !important;
 }
@@ -472,7 +404,6 @@ footer .credit {
   padding: 0 !important;
   padding-top: 5% !important;
 }
-
 .about-us .hero .title-about {
   max-width: 85%;
   color: #ec5242;
@@ -480,38 +411,31 @@ footer .credit {
   font-weight: 700;
   line-height: 42px;
 }
-
 .about-us .hero .bord {
   margin-top: 16px;
 }
-
 .about-us .hero .home-para {
   max-width: 85%;
   background-color: white;
   border: 1px solid #d3d3d3;
   margin-top: 9px;
 }
-
 .about-us .begin {
   background-color: white;
 }
-
 .about-us .begin .section-title {
   padding-top: 50px;
   font-weight: 400;
 }
-
 .about-us .begin .para {
   font-size: 15px;
   font-weight: 300;
   text-align: center;
 }
-
 .about-us .begin .begin-imgs {
   gap: 27px;
   padding: 20px 0 50px 0;
 }
-
 .about-us .begin .pic {
   width: 350px;
   height: 200px;
@@ -520,21 +444,18 @@ footer .credit {
   padding-top: 50px;
   font-weight: 300;
 }
-
 .about-us .begin .pic .year {
   font-weight: 700;
   font-size: 30px;
 }
-
 .about-us .begin .pic1 {
-  background-image: linear-gradient(to bottom, rgba(213, 20, 20, 0.5), rgba(214, 27, 27, 0.5)), url("../../../assets/cars/old-car1.jpg");
+  background-image: linear-gradient(to bottom, rgba(213, 20, 20, 0.5), rgba(214, 27, 27, 0.5)), url("../assets/cars/old-car1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-
 .about-us .begin .pic2 {
-  background-image: linear-gradient(to bottom, rgba(213, 20, 20, 0.5), rgba(214, 27, 27, 0.5)), url("../../../assets/cars/old-car2.jpg");
+  background-image: linear-gradient(to bottom, rgba(213, 20, 20, 0.5), rgba(214, 27, 27, 0.5)), url("../assets/cars/old-car2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -547,14 +468,12 @@ footer .credit {
     font-weight: 700;
     line-height: 63px;
   }
-
   .about-us .hero .home-para {
     max-width: 48%;
   }
-
   .begin .begin-imgs {
     flex-direction: row !important;
     gap: 88px !important;
     padding: 50px 0 50px 0;
   }
-}
+}/*# sourceMappingURL=style.css.map */
