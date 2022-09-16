@@ -1,60 +1,70 @@
 @use '../abstract/variables' as *;
 
 @media (min-width: 768px) {
-    nav {
-      padding: 0px;
-  
-      .nav-bars {
-        display: none;
+  nav {
+    padding: 0;
+
+    .nav-bars {
+      display: none;
+    }
+
+    #toolbar-items {
+      display: flex !important;
+      background-color: $alt-primary;
+      color: $alt-light;
+      margin-bottom: 0 !important;
+      padding-right: 16% !important;
+
+      .fa {
+        line-height: 0;
       }
-      #toolbar-items {
-        display: flex !important;
-        background-color: $alt-primary;
-        color: $alt-light;
-        margin-bottom: 0 !important;
-        padding-right: 16% !important;
-        .fa {
-          line-height: 0;
+    }
+
+    .nav-items {
+      background-color: white;
+      display: flex !important;
+      height: 70px;
+      padding: 0 16% 0 22% !important;
+
+      .logo {
+        gap: 6px;
+
+        .logo-img {
+          position: absolute;
+          animation: car 3s;
+          animation-delay: 1s;
+          left: 316px;
+        }
+
+        .vertical-bord {
+          width: 1px;
+          height: 50px;
+          opacity: 0.6;
+          background-color: $alt-primary;
+        }
+
+        .carento {
+          color: $alt-secondary;
         }
       }
-      .nav-items {
-        background-color: white;
-        display: flex !important;
-        height: 70px;
-        padding: 0px 16% 0 22% !important;
-        .logo {
-          gap: 6px;
-          .logo-img {
-            position: absolute;
-            animation: car 3s;
-            animation-delay: 1s;
-            left: 316px;
-          }
-          .vertical-bord {
-            width: 1px;
-            height: 50px;
-            opacity: 0.6;
-            background-color: $alt-primary;
-          }
-          .carento {
-            color: $alt-secondary;
+
+      .nav-btns {
+        gap: 80px;
+
+        .nav-item a {
+          &:hover {
+            color: $alt-secondary !important;
           }
         }
-        .nav-btns {
-          gap: 80px;
-          .nav-item a {
-            &:hover {
-              color: $alt-secondary !important;
-            }
-          }
-          .special {
-            border: 5px solid $alt-secondary;
-          }
-          .close {
-            display: none;
-          }
+
+        .special {
+          border: 5px solid $alt-secondary;
+        }
+
+        .close {
+          display: none;
         }
       }
     }
   }
-  
+}

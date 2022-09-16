@@ -1,97 +1,107 @@
 @use '../abstract/variables' as *;
 
 .services {
-    background-color: $alt-primary;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(40, 41, 43, 0.7),
-        rgba(44, 46, 49, 0.7)
-      ),
-      url("../assets/bgs/x.png");
-    gap: 8px;
-    background-size: 10px;
-    min-height: 80vh;
-  
-    .service-card {
-      background-image: linear-gradient(
+  background-color: $alt-primary;
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(40, 41, 43, 0.7),
+      rgba(44, 46, 49, 0.7)
+    ),
+    url("../assets/bgs/x.png");
+  gap: 8px;
+  background-size: 10px;
+  min-height: 80vh;
+
+  .service-card {
+    background-image:
+      linear-gradient(
         to right,
         rgba(102, 104, 109, 0.3),
         rgba(100, 112, 130, 0.3)
       );
-      width: 95%;
-      justify-content: flex-start;
-      gap: 6px;
-      align-items: center;
-      height: 90px;
-      .service-img {
-        width: 38px;
-      }
-      .service-title {
-        min-width: 100px;
-        font-size: 18px;
-        font-weight: bolder;
-        margin-bottom: 0;
-        color: $alt-secondary;
-      }
-      .service-desc {
-        font-size: smaller;
-        margin-bottom: 0;
-        color: #d8dde0;
-      }
+    width: 95%;
+    justify-content: flex-start;
+    gap: 6px;
+    align-items: center;
+    height: 90px;
+
+    .service-img {
+      width: 38px;
     }
-    .btn {
-      background-color: $alt-secondary;
-      border-radius: 0;
-      color: $alt-light;
-      height: 55px;
-      width: 238px;
-      margin-top: 28px;
+
+    .service-title {
+      min-width: 100px;
       font-size: 18px;
-      font-weight: 500;
-      margin-bottom: 28px;
-      &:hover {
-        background-color: $alt-secondary--hover;
-      }
+      font-weight: bolder;
+      margin-bottom: 0;
+      color: $alt-secondary;
+    }
+
+    .service-desc {
+      font-size: smaller;
+      margin-bottom: 0;
+      color: #d8dde0;
     }
   }
 
+  .btn {
+    background-color: $alt-secondary;
+    border-radius: 0;
+    color: $alt-light;
+    height: 55px;
+    width: 238px;
+    margin-top: 28px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 28px;
+
+    &:hover {
+      background-color: $alt-secondary--hover;
+    }
+  }
+}
 
 @media (min-width: 786px) {
-    .services {
-        display: grid !important;
-        grid-template-columns: auto auto auto auto auto auto;
-        align-content: center;
-        align-items: start !important;
-        min-height: 60vh;
-        justify-items: center;
-        justify-content: center;
-        column-gap: 0px;
-        .section-title,
-        .bord,
-        .btn {
-          grid-column: 1/7;
-        }
-        .btn{
-          text-transform: uppercase;
-          text-decoration: underline;
-          background: none;
-        }
-      }
-    
-      .service-card {
-        flex-direction: column !important;
-        height: 278px !important;
-        max-width: 268px;
-        padding-top: 30px !important;
-        .service-title {
-          min-width: auto !important;
-          font-size: 25px !important;
-          padding-top: 18px;
-        }
-        .service-desc {
-          text-align: center;
-          font-size: 16px !important;
-          padding-top: 10px;
-        }
+  .services {
+    display: grid !important;
+    grid-template-columns: auto auto auto auto auto auto;
+    align-content: center;
+    align-items: start !important;
+    min-height: 60vh;
+    justify-items: center;
+    justify-content: center;
+    column-gap: 0;
+
+    .section-title,
+    .bord,
+    .btn {
+      grid-column: 1/7;
     }
+
+    .btn {
+      text-transform: uppercase;
+      text-decoration: underline;
+      background: none;
+    }
+  }
+
+  .service-card {
+    flex-direction: column !important;
+    height: 278px !important;
+    max-width: 268px;
+    padding-top: 30px !important;
+
+    .service-title {
+      min-width: auto !important;
+      font-size: 25px !important;
+      padding-top: 18px;
+    }
+
+    .service-desc {
+      text-align: center;
+      font-size: 16px !important;
+      padding-top: 10px;
+    }
+  }
 }

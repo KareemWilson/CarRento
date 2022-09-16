@@ -1,41 +1,44 @@
 @use '../abstract/variables' as *;
 
 @media (max-width: 768px) {
-    nav {
-      padding: $section-padding;
-      .nav-bars {
-        color: $alt-primary;
-      }
-      .nav-btns {
-        background-color: white;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0.95;
-        width: 100%;
-        flex-direction: column;
-        justify-content: flex-start !important;
-        align-items: flex-start !important;
-        font-size: 39px;
-        gap: 30px;
-        padding: 20% 0 0 7%;
-        transition: 2s;
+  nav {
+    padding: $section-padding;
 
-        .close {
-          position: absolute;
-          right: 20px;
-          top: 12px;
-          width: 52px;
-          height: 52px;
-          text-align: center;
-          border-radius: 120px;
-          color: $alt-light;
-          background-color: $alt-secondary;
-        }
-        .special {
-          padding: 0 !important;
-        }
+    .nav-bars {
+      color: $alt-primary;
+    }
+
+    .nav-btns {
+      background-color: white;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.95;
+      width: 100%;
+      flex-direction: column;
+      justify-content: flex-start !important;
+      align-items: flex-start !important;
+      font-size: 39px;
+      gap: 30px;
+      padding: 20% 0 0 7%;
+      transition: 2s;
+
+      .close {
+        position: absolute;
+        right: 20px;
+        top: 12px;
+        width: 52px;
+        height: 52px;
+        text-align: center;
+        border-radius: 120px;
+        color: $alt-light;
+        background-color: $alt-secondary;
+      }
+
+      .special {
+        padding: 0 !important;
       }
     }
   }
+}

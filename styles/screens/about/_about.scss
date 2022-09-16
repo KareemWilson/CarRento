@@ -1,7 +1,7 @@
 @use "../../abstract/variables" as *;
 
 .seperator {
-  margin: 0px !important;
+  margin: 0 !important;
 }
 
 .about-us {
@@ -9,6 +9,7 @@
     max-width: 100%;
     padding: 0 !important;
     padding-top: 5% !important;
+
     .title-about {
       max-width: 85%;
       color: $alt-secondary;
@@ -16,9 +17,11 @@
       font-weight: 700;
       line-height: 42px;
     }
+
     .bord {
       margin-top: 16px;
     }
+
     .home-para {
       max-width: 85%;
       background-color: white;
@@ -26,54 +29,64 @@
       margin-top: 9px;
     }
   }
+
   .begin {
     background-color: white;
+
     .section-title {
       padding-top: 50px;
       font-weight: 400;
     }
+
     .para {
       font-size: 15px;
       font-weight: 300;
       text-align: center;
     }
-    .begin-imgs{
-        gap: 27px;
-        padding: 20px 0 50px 0;
+
+    .begin-imgs {
+      gap: 27px;
+      padding: 20px 0 50px 0;
     }
-    .pic{
-        width: 350px;
-        height: 200px;
-        color: white;
-        font-size: 26px;
-        padding-top: 50px;
-        font-weight: 300;
-        .year{
-            font-weight: 700;
-            font-size: 30px;
-        }
+
+    .pic {
+      width: 350px;
+      height: 200px;
+      color: white;
+      font-size: 26px;
+      padding-top: 50px;
+      font-weight: 300;
+
+      .year {
+        font-weight: 700;
+        font-size: 30px;
+      }
     }
-    .pic1{
-        background-image: linear-gradient(
-        to bottom,
-        rgba(213, 20, 20, 0.5),
-        rgba(214, 27, 27, 0.5)
-      ),
-      url("../../../assets/cars/old-car1.jpg");
-        background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+
+    .pic1 {
+      background-image:
+        linear-gradient(
+          to bottom,
+          rgba(213, 20, 20, 0.5),
+          rgba(214, 27, 27, 0.5)
+        ),
+        url("../../../assets/cars/old-car1.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
-    .pic2{
-        background-image: linear-gradient(
-        to bottom,
-        rgba(213, 20, 20, 0.5),
-        rgba(214, 27, 27, 0.5)
-      ),
-      url("../../../assets/cars/old-car2.jpg");
-        background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+
+    .pic2 {
+      background-image:
+        linear-gradient(
+          to bottom,
+          rgba(213, 20, 20, 0.5),
+          rgba(214, 27, 27, 0.5)
+        ),
+        url("../../../assets/cars/old-car2.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
   }
 }
@@ -87,16 +100,18 @@
         font-weight: 700;
         line-height: 63px;
       }
+
       .home-para {
         max-width: 48%;
       }
     }
   }
+
   .begin {
-    .begin-imgs{
-        flex-direction: row !important;
-        gap:88px !important;
-        padding: 50px 0 50px 0;
+    .begin-imgs {
+      flex-direction: row !important;
+      gap: 88px !important;
+      padding: 50px 0 50px 0;
     }
   }
 }
