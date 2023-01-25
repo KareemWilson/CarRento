@@ -38,10 +38,18 @@
 
 <details>
 <summary>HTML</summary>
-<summary>CSS</summary>
-<summary>SASS</summary>
-<summary>Bootstrap</summary>
+</details>
 
+<details>
+<summary>CSS</summary>
+</details>
+
+<details>
+<summary>SASS</summary>
+</details>
+
+<details>
+<summary>Bootstrap</summary>
 </details>
 
 <!-- Features -->
